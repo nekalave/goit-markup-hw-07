@@ -6,25 +6,8 @@
   --actent-secundary-color: #188CE8;
   --background-white-color: #F5F4FA;
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  color: var(--primary-text-color);
-  font-size: 14px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  --primary-font-family: Roboto, sans-serif;
+  --secundary-font-family: Raleway, sans-serif;
 }
 
 ul {
@@ -43,6 +26,25 @@ a {
 
 img {
   display: block;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-size: 14px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -109,7 +111,7 @@ img {
 
 .header-logo {
   color: var(--primary-text-color);
-  font-family: Raleway, sans-serif;
+  font-family: var(--secundary-font-family);
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
@@ -691,15 +693,13 @@ img {
   -webkit-transition: color 250ms var(--animation-function), border-color 250ms var(--animation-function);
   transition: color 250ms var(--animation-function), border-color 250ms var(--animation-function);
 }
+.customers__link:hover, .customers__link:focus {
+  border-color: var(--actent-color);
+  color: var(--actent-color);
+}
 
 .customers__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.customers__link:hover,
-.customers__link:focus {
-  border-color: var(--actent-color);
-  color: var(--actent-color);
 }
 
 .customers__icon {
@@ -713,7 +713,7 @@ img {
 
 .footer-logo {
   color: var(--primary-white-color);
-  font-family: Raleway, sans-serif;
+  font-family: var(--secundary-font-family);
   font-size: 26px;
   font-weight: 700;
   line-height: normal;

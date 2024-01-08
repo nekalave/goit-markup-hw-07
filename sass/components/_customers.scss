@@ -23,6 +23,12 @@
     color: #AFB1B8;
     transition:color 250ms var(--animation-function),
     border-color 250ms var(--animation-function);
+
+    &:hover,
+    &:focus {
+        border-color: var(--actent-color);
+        color: var(--actent-color);
+    }
 }
 
 .customers__item {
@@ -31,11 +37,7 @@
     }
 }
 
-.customers__link:hover,
-.customers__link:focus {
-    border-color: var(--actent-color);
-    color: var(--actent-color);
-}
+
 
 .customers__icon {
     fill: currentColor;
